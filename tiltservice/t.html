@@ -13,15 +13,15 @@
 		 <!--Navbar me klasen"tekst"+logo-->
     <!--faqja e pare por vendoset ne fund qe te rri fixed over all other elements--> 
 	 <div class="tekst">
-        <a href="file.html" target="_blank">HOME</a>
-        <a href="file.html/#prev" target="_blank">SERVICE & PARTS</a>
-        <a href="tiltservice/t.html" target="_blank">Tilt Tray
+        <a href="../file.html" target="_blank">HOME</a>
+        <a href="../file.html#prev" target="_blank">SERVICE & PARTS</a>
+        <a href="./t.html" target="_blank">Tilt Tray
             service</a>
-        <a href="about pages/about.html" target="_blank">About
+        <a href="../about pages/about.html" target="_blank">About
             us</a>
-        <a href="contact pages/contact.html" target="_blank"><i
+        <a href="../contact pages/contact.html" target="_blank"><i
                 class="fa-solid fa-phone" style="color: red;"></i>Contact Page</a>
-        <a id="button" href="getfreequote/quote.html"
+        <a id="button" href="../getfreequote/quote.html"
             target="_blank"> Get a free Quote</a>
         <img class="logo" src="https://i.ebayimg.com/thumbs/images/g/cQQAAOSwH7NjjD3m/s-l640.jpg">
     </div>
@@ -91,7 +91,7 @@
 						<option value="containers">Containers</option>
 					  </select>
 
-					  <button id="submit" type="button" onclick="myFunction()">Submit</button>
+					  <button id="submit" type="button" onclick="myFunction(event)">Submit</button>
 				</form>
 			</div>
 		</section>	
@@ -119,12 +119,12 @@
     <div class="two">
         <h3>Quick Links</h3>   
         <br>
-    <i class="fa-solid fa-arrow-right"></i><a href="file:///C:/Users/User/Desktop/projekti%20intership/file.html" target="_blank">Home</a><br><br>
-    <i class="fa-solid fa-arrow-right"></i><a href="file:///C:/Users/User/Desktop/projekti%20intership/file.html#prev" target="_blank">Service&Parts</a><br><br>
-    <i class="fa-solid fa-arrow-right"></i><a href="file:///C:/Users/User/Desktop/projekti%20intership/tiltservice/t.html#" target="_blank">Tilt tray Service</a><br><br>
-    <i class="fa-solid fa-arrow-right"></i><a href="file:///C:/Users/User/Desktop/projekti%20intership/getfreequote/quote.html" target="_blank">Get a Quote</a><br><br>
-    <i class="fa-solid fa-arrow-right"></i><a href="file:///C:/Users/User/Desktop/projekti%20intership/about%20pages/about.html" target="_blank">About Us</a><br><br>
-    <i class="fa-solid fa-arrow-right"></i><a href="file:///C:/Users/User/Desktop/projekti%20intership/contact%20pages/contact.html" target="_blank">Contact us</a><br><br>
+    <i class="fa-solid fa-arrow-right"></i><a href="../file.html" target="_blank">Home</a><br><br>
+    <i class="fa-solid fa-arrow-right"></i><a href="../file.html#prev" target="_blank">Service&Parts</a><br><br>
+    <i class="fa-solid fa-arrow-right"></i><a href="t.html" target="_blank">Tilt tray Service</a><br><br>
+    <i class="fa-solid fa-arrow-right"></i><a href="../getfreequote/quote.html" target="_blank">Get a Quote</a><br><br>
+    <i class="fa-solid fa-arrow-right"></i><a href="../about pages/about.html" target="_blank">About Us</a><br><br>
+    <i class="fa-solid fa-arrow-right"></i><a href="../contact pages/contact.html" target="_blank">Contact us</a><br><br>
 
     </div>
     
@@ -168,26 +168,6 @@
 
 
 	
-	<script>
-		function myFunction() {
-		  const firstname=document.getElementById("myForm").elements.namedItem("firstName").value
-		  const lastname=document.getElementById("myForm").elements.namedItem("lastName").value
-		  const date=document.getElementById("myForm").elements.namedItem("date").value
-		  const type=document.getElementById("myForm").elements.namedItem("type").value
-
-			
-			alert("Hello "+firstname+" "+lastname+" !"+" Shipment of type " + type +" at date " + date + " has been confirmed! ");
-		}
-		function contact2(){
-    var name2=document.getElementById("name2").value;
-    var email2=document.getElementById("email2").value;
-
-    if(name2==" " || email2== " "){
-        alert("Filled it out");
-        return false;
-      } 
-
-}
-		</script>
+	<script src="t.js"></script>
 </body>
 </html>

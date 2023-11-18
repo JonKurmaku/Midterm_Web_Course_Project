@@ -57,14 +57,14 @@
             <div>
                 <label for="model">Select the Model</label>
                 <select name="Model" id="model">
-                    <option value="audi" id="a">Audi</option>
-                    <option value="bmw">BMW</option>
-                    <option value="benz">Benz</option>
-                    <option value="volkswagen">Volkswagen</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Volkswagen">Volkswagen</option>
                     <option value="Land Rover">Land Rover</option>
                     <option value="Volvo">Volvo</option>
                     <option value="Honda">Honda</option>
-                    <option value="HYUNDAI">Hyundai</option>
+                    <option value="Hyundai">Hyundai</option>
                     <option value="Toyota">Toyota</option>
                     <!-- <option value="Mitsubishi">Mitsubishi</option>
                     <option value="Mazda">Mazda</option>
@@ -79,15 +79,17 @@
             </div>
             <br>
 
-            <label for="Price">Select the price</label>
+            <label for="Price">Select the price up to (€)</label>
             <select name="price" id="Price">
+                <option value="€5,000" >€5000</option>
 
-                <option value="price1" id="op1">20.000€-40.000€</option>
-                <option value="price2" id="op2">40.000€-60.000€</option>
-                <option value="price3" id="op3">60.000€-80.000€</option>
-                <option value="price4" id="op4">80.000€-100.000€</option>
-                <option value="price5" id="op5">100.000€-200.000€</option>
-
+                <option value="€10,000" >€10000</option>
+                <option value="€15,000" >€15000</option>
+                <option value="€20,000" >€20000</option>
+                <option value="€25,000" >€25000</option>
+                <option value="€30,000" >€30000</option>
+                <option value="€35,000" >€35000</option>
+                <option value="€40,000" >€40000</option>
 
             </select>
 
@@ -95,9 +97,8 @@
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas doloribus inventore.</p>
             <br>
-            <h2>Click here to search <i class="fa-solid fa-arrow-right"></i><a id="anchor1"
-                    href="https://www.auto1.com/en/home" onclick="search(), event.preventDefault();">Search
-                    now...<i class="fa-solid fa-magnifying-glass fa-beat-fade"></i></a></h2>
+            <h2>Click here to search <i class="fa-solid fa-arrow-right"></i><button id="anchor1"
+                    onClick="search(event)">Search now...<i class="fa-solid fa-magnifying-glass fa-beat-fade"></i></button></h2>
         </form>
 
     </div>
@@ -159,6 +160,8 @@
         <div id="galeriamakinave">
             <div id="cifti1">
 
+
+                <p style="position: absolute; top: -50px; left: 330px; color: red ; font-size: xx-large;"> Check out our Electric Cars</p>
                 <img id="ft1"
                     src="https://ev-database.org/img/auto/Audi_Q4_e-tron_Sportback_2021/Audi_Q4_e-tron_Sportback_2021-01@2x.jpg">
                 <p id="p1">Model:<span id="p11"> Q4</span><br>Year:<span id="p111"> 2023</span><br>KM:<span id="p1111">
@@ -265,43 +268,22 @@
             <div class="before">
                 <h2>About <span class="color">Stwins Spares</span></h2>
                 <p>
-                    Lorem Ipsum is simply dummy text of printing and typesetting industry.<br><br>
-                    Lorem Ipsum is simply dummy text of printing and typesetting industry.Lorem<br>
-                    Ipsum has been the industry`s standard dummy text ever since the 1500s,when an<br>
-                    unknown printer took a gallery of type typeseeting,<br><br>
-                    It is a long established fact that a reader will be distracted by the readable content of a<br>
-                    hen looking at its layout.The point of using Lorem English.
+                    "Stwins is a leading car dismantler in Sydney & Central Coast.<br> Stwins is a specialist in Jeep,
+                Chrysler, Dodge and 4WD used car parts.
+                <br> At Stwins we also Dismantle Late models, Ford, Holden, Lexus, Hyundai, Kia, BMW, Mercedes-Benz,
+                Peugeot, Nissan, Mazda, Jaguar, Mitsubishi, Range Rover, Land Rover, Volvo, Skoda, Citroen and Renault.
+                We are one of Sydney's best Engine and Gearbox / Transmission specialists and can also offer fitting
+                service.
                     <br>
-                    <a href="https://www.kaggle.com/code/colinmorris/hello-python">Read more</a>
+                    <a href="./about pages/about.html">Read more</a>
                 </p>
             </div>
             <div class="form">
+                <br>
+                <br>
                 <h3>Quick <span class="color2">Enquire Now</span></h3>
-                <h4>Note:fields marked with(*) are mandatory</h4>
-                <form method="post" onsubmit="return contact()">
-                    <div>
-                        <input type="text" id="name" placeholder="Full Name*" required>
-                    </div>
-                    <div>
-                        <input type="email" id="email" placeholder="Email*" required>
-                    </div>
-                    <div>
-                        <input type="number" id="number" placeholder="Phone*" required>
-                    </div>
-                    <div>
-                        <input type="text" id="location" placeholder="Location*" required>
-                    </div>
-                    <div>
-                        <input type="text" id="message" placeholder="Message" required>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="e" name="e " value="I am not a robot">
-                        <label for="e">I am not a robot</label>
-                    </div>
-                    <div>
-                        <button onclick="contact()" type="sumbit" id="content" value="Enquire Now">Enquire Now</button>
-                    </div>
-                </form>
+                <p style="border: none; font-size: 35px;">To contact us <a style="color: white; text-decoration: none;" href="./contact pages/contact.html" onMouseOver="this.style.color='yellow'"
+                    onMouseOut="this.style.color='white'">Click Here</a></p>
             </div>
         </div>
         <br>
@@ -392,24 +374,12 @@
                 <div class="two">
                     <h3>Quick Links</h3>
                     <br>
-                    <i class="fa-solid fa-arrow-right"></i><a
-                        href="file:///C:/Users/User/Desktop/projekti%20intership/file.html"
-                        target="_blank">Home</a><br><br>
-                    <i class="fa-solid fa-arrow-right"></i><a
-                        href="file:///C:/Users/User/Desktop/projekti%20intership/file.html#prev"
-                        target="_blank">Service&Parts</a><br><br>
-                    <i class="fa-solid fa-arrow-right"></i><a
-                        href="file:///C:/Users/User/Desktop/projekti%20intership/tiltservice/t.html#"
-                        target="_blank">Tilt tray Service</a><br><br>
-                    <i class="fa-solid fa-arrow-right"></i><a
-                        href="file:///C:/Users/User/Desktop/projekti%20intership/getfreequote/quote.html"
-                        target="_blank">Get a Quote</a><br><br>
-                    <i class="fa-solid fa-arrow-right"></i><a
-                        href="file:///C:/Users/User/Desktop/projekti%20intership/about%20pages/about.html"
-                        target="_blank">About Us</a><br><br>
-                    <i class="fa-solid fa-arrow-right"></i><a
-                        href="file:///C:/Users/User/Desktop/projekti%20intership/contact%20pages/contact.html"
-                        target="_blank">Contact us</a><br><br>
+                    <i class="fa-solid fa-arrow-right"></i><a href="file.html" target="_blank">Home</a><br><br>
+                    <i class="fa-solid fa-arrow-right"></i><a href="file.html#prev" target="_blank">Service&Parts</a><br><br>
+                    <i class="fa-solid fa-arrow-right"></i><a href="./tiltservice/t.html#" target="_blank">Tilt tray Service</a><br><br>
+                    <i class="fa-solid fa-arrow-right"></i><a href="./getfreequote/quote.html" target="_blank">Get a Quote</a><br><br>
+                    <i class="fa-solid fa-arrow-right"></i><a href="./about pages/about.html" target="_blank">About Us</a><br><br>
+                    <i class="fa-solid fa-arrow-right"></i><a href="./contact pages/contact.html" target="_blank">Contact us</a><br><br>
 
                 </div>
 
@@ -457,7 +427,7 @@
     <!--faqja e pare por vendoset ne fund qe te rri fixed over all other elements-->
     <div class="tekst">
         <a href="file.html" target="_blank">HOME</a>
-        <a href="file.html/#prev" target="_blank">SERVICE & PARTS</a>
+        <a href="#prev" target="">SERVICE & PARTS</a>
         <a href="tiltservice/t.html" target="_blank">Tilt Tray
             service</a>
         <a href="about pages/about.html" target="_blank">About
@@ -466,11 +436,14 @@
                 class="fa-solid fa-phone" style="color: red;"></i>Contact Page</a>
         <a id="button" href="getfreequote/quote.html"
             target="_blank"> Get a free Quote</a>
+        <a id="button" href="login/login.html"
+            >Admin</a>
         <img class="logo" src="https://i.ebayimg.com/thumbs/images/g/cQQAAOSwH7NjjD3m/s-l640.jpg">
     </div>
 
 
     <script src="jsfolder/file1.js"></script>
+    <script src="jsfolder/file2.js"></script>
 </body>
 
 </html>
